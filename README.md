@@ -2,9 +2,9 @@
 
 ### Overview of how to..
 
-- how to work with the new type safe Jetpack Compose navigation.
-- how to send data to next screen via TypeSafe Navigation
-- how to setResultAndPop current screen to send data back to the previous screen
+- Managing navigation in Android Compose Project using TypeSafe Navigation
+- Pass data from One Screen to Another Screen along with TypeSafe Navigation
+- Set result back to the called Screen : (setResult in activity)
 
 You can find more info about the motivation behind this repository in the
 post [Type Safety in Navigation Compose](https://medium.com/@edmiro/type-safety-in-navigation-compose-23c03e3d74a5)
