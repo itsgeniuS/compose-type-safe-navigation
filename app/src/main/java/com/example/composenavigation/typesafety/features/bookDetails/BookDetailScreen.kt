@@ -1,4 +1,4 @@
-package com.example.composenavigation.typesafety
+package com.example.composenavigation.typesafety.features.bookDetails
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

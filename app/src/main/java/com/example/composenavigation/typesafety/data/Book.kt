@@ -1,4 +1,4 @@
-package com.example.composenavigation.typesafety
+package com.example.composenavigation.typesafety.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

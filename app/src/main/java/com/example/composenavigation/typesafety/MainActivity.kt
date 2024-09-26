@@ -8,7 +8,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.composenavigation.typesafety.ui.theme.ComposeNavigationTypeSafetyTheme
+import com.example.composenavigation.typesafety.core.TypeSafetyNavigation
+import com.example.composenavigation.typesafety.res.ComposeNavigationTypeSafetyTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -1,4 +1,4 @@
-package com.example.composenavigation.typesafety
+package com.example.composenavigation.typesafety.core
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

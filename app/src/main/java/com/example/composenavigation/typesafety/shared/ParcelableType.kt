@@ -1,9 +1,10 @@
-package com.example.composenavigation.typesafety
+package com.example.composenavigation.typesafety.shared
 
 import android.os.Build
 import android.os.Bundle
 import android.os.Parcelable
 import androidx.navigation.NavType
+import com.example.composenavigation.typesafety.data.Book
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 

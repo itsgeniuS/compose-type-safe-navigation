@@ -1,27 +1,15 @@
-package com.example.composenavigation.typesafety
+package com.example.composenavigation.typesafety.core
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.lifecycle.SavedStateHandle
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.toRoute
-import kotlinx.serialization.Serializable
-import kotlin.reflect.typeOf
+import com.example.composenavigation.typesafety.features.bookDetails.BookDetailScreen
+import com.example.composenavigation.typesafety.features.bookList.ListOfBooksScreen
+import com.example.composenavigation.typesafety.shared.BookDetail
+import com.example.composenavigation.typesafety.shared.ListOfBooks
 
-@Serializable
-object ListOfBooks
-
-@Serializable
-data class BookDetail(val book: Book) {
-    companion object {
-        val typeMap = mapOf(typeOf<Book>() to serializableType<Book>())
-
-        fun from(savedStateHandle: SavedStateHandle) =
-            savedStateHandle.toRoute<BookDetail>(typeMap)
-    }
-}
 
 @Composable
 fun TypeSafetyNavigation(modifier: Modifier = Modifier) {
