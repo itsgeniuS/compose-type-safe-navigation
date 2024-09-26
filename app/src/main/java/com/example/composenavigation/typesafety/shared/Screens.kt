@@ -3,6 +3,8 @@ package com.example.composenavigation.typesafety.shared
 import androidx.lifecycle.SavedStateHandle
 import androidx.navigation.toRoute
 import com.example.composenavigation.typesafety.data.Book
+import com.example.composenavigation.typesafety.data.BookReadStatus
+import com.example.composenavigation.typesafety.shared.BookDetail.Companion
 import kotlinx.serialization.Serializable
 import kotlin.reflect.typeOf
 
@@ -12,7 +14,12 @@ import kotlin.reflect.typeOf
  */
 
 @Serializable
-object ListOfBooks
+object ListOfBooks {
+    val typeMap = mapOf(typeOf<BookReadStatus>() to serializableType<BookReadStatus>())
+
+    fun from(savedStateHandle: SavedStateHandle) =
+        savedStateHandle.toRoute<BookReadStatus>(typeMap)
+}
 
 @Serializable
 data class BookDetail(val book: Book) {

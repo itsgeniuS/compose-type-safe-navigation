@@ -2,7 +2,7 @@ package com.example.composenavigation.typesafety.features.bookDetails
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import com.example.composenavigation.typesafety.core.BookDetail
+import com.example.composenavigation.typesafety.shared.BookDetail
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
